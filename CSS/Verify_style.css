@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* nav bar */
+.nav_bar {
+  display: flex;
+  align-items: center;
+  height: 60px;
+}
+.left_div {
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+.logo {
+  width: 80px;
+  height: 80px;
+}
+p {
+  margin-left: 25px;
+  color: rgb(108, 108, 108);
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+/* right div */
+.right_div {
+  width: 50%;
+  display: flex;
+  justify-content: right;
+  margin-right: 20px;
+  align-items: center;
+}
+input {
+  height: 35px;
+  width: 100px;
+  background-color: #e7e7e7;
+  border: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  color: rgb(128, 128, 128);
+  margin-right: 20px;
+}
+.search_icon {
+  color: rgb(128, 128, 128);
+  background-color: #e7e7e7;
+  height: 35px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.bag {
+  color: rgb(120, 120, 120);
+  margin-right: 20px;
+}
+.profile_logo {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+.next_btn {
+  margin-top: 0;
+  width: 70px;
+}
+hr {
+  margin-top: 10px;
+  opacity: 40%;
+}
+
+/* main div */
+.email_div {
+  display: flex;
+  justify-content: center;
+}
+.mainDiv {
+  text-align: center;
+  margin-top: 60px;
+  width: 585px;
+}
+.email_logo {
+  width: 110px;
+  height: 115px;
+  margin-top: 10px;
+  opacity: 50%;
+}
+.mainDiv p {
+  font-size: 0.9rem;
+  color: rgb(108, 108, 108);
+  margin-top: 20px;
+}
+h4 {
+  margin-top: 20px;
+}
+span {
+  font-size: 0.85rem;
+}
+.align_div {
+  color: rgb(108, 108, 108);
+  margin-top: 20px;
+}
+
+/* description section */
+
+.description {
+  background-color: #fafafa;
+  margin-top: 50px;
+  padding: 30px;
+  padding-top: 40px;
+  padding-bottom: 0;
+}
+.left_desc {
+  width: 25%;
+}
+.left_desc p {
+  color: #3f3f49;
+}
+.left_desc img {
+  margin-left: 15px;
+}
+.left_desc i {
+  margin-left: 10px;
+  margin-top: 20px;
+}
+
+/* right_decription */
+.right_desc {
+  width: 75%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.right_desc p {
+  font-size: 0.7rem;
+  margin-left: 0;
+  margin-top: 10px;
+}
+
+h6 {
+  margin-top: 20px;
+}
+
+.copy_right {
+  display: flex;
+  align-items: center;
+  height: 70px;
+  width: 100%;
+}
+.copy_right p {
+  margin-left: 5px;
+  font-size: 0.7rem;
+}
+.count {
+  display: flex;
+ justify-content: end;
+}
+.count h6{
+margin-top: 0;
+}
+.dribbble{
+  color: rgb(227, 0, 121);
+}

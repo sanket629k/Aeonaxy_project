@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.maindiv{
+    display: flex;
+}
+
+/* logo section */
+.backbtn{
+    height: 30px;
+    width: 30px;
+    font-family: sans-serif;
+    color: rgb(67, 67, 67);
+    background-color: #e7e7e7;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.logo_div{
+    display: flex;
+    align-items: center;
+    
+}
+
+/* right_div section */
+.right_div{
+    text-align: center;
+    margin-top: 100px;
+    margin-left: 130px;
+    
+}
+.right_div p{
+    margin-top: 15px;
+    color: rgb(106, 106, 106);
+}
+
+/* option-section */
+.opt_div{
+    display: flex;
+    
+    margin-top: 80px;
+}
+.opt_div div{
+    border: 1px solid rgb(198, 198, 198);
+    width: 183px;
+    height: 190px;
+    padding: 15px;
+    border-radius: 15px;
+    margin: 20px;
+   
+}
+.opt_div input{
+    margin-top: 12px;
+    
+}
+.opt_img{
+    width: 180px;
+    height: 115px;
+}
+.next_btn{
+    margin-top: 20px;
+    
+}
+.rounded{
+    height: 20px;
+    width: 20px;
+    outline: none;
+    border-radius: 50%;
+    border: 1px solid rgb(141, 141, 141);
+    vertical-align: middle;
+    appearance: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+}
+.rounded:checked{
+    appearance: auto;
+    clip-path: circle(50% at 50% 50%);
+}
+.check_box{
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    margin-top: 10px;
+    margin-left: 82px;
+}
+.return{
+    width: 100%;
+}
+.heading{
+    margin-top: 30px;
+}
+
+@media only screen and (max-width: 768px){
+    .right_div{
+        margin-left: -108px;
+    }
+    .opt_div{
+        display: block;
+        margin-left: 240px;
+    }
+    .next_btn{
+        margin-left: 50px;
+    }
+    h1{
+        margin-left: 145px;
+    }
+    p{
+        margin-left: 92px;
+    }
+}
+

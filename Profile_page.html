@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile</title>
+    <link rel="stylesheet" href="CSS/Profile_style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="main_div">
+      <div><img class="logo" src="Images/logo.avif" alt="Logo" /></div>
+
+      <div class="profile">
+        <h1>Welcome! Let's create your profile</h1>
+        <p>Let others get to know you better! You can do these later</p>
+
+        <div class="profile_img">
+          <div class="profile_icon">
+            <h4>Add an avatar</h4>
+
+            <img
+              id="profileIcon"
+              src="Images/camera_icon.png"
+              class="camera camera_icon"
+              alt=""
+            />
+          </div>
+          <div class="choose_img">
+            <button  id="clickopen" onclick="clickme()" class="btn">
+              Choose image
+            </button>
+            <p>> Or choose one of our defaults</p>
+          </div>
+        </div>
+
+        <div class="location_div">
+          <h4>Add your location</h4>
+
+          <div class="add_location">
+            <input
+              class="location"
+              placeholder="Enter a location"
+              type="text"
+            />
+          </div>
+        </div>
+        <input style="display: none" id="dialog" type="file" />
+        <button id="next" class="next_btn" onclick="clicked()">Next</button>
+        <div class="return">
+            <span id="span1" ></span>
+        <span id="span2" style="font-weight: 550;"></span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script>
+    next.disabled = true;
+    next.style.opacity="50%";
+  function clickme() {
+    dialog.click();
+    profileIcon.src = "";
+    profileIcon.src = "Images/Profile.jpg";
+    profileIcon.style.padding = 0;
+    profileIcon.style.width = "150px";
+    profileIcon.style.height = "150px";
+    profileIcon.style.border = "none";
+    next.disabled = false;
+    next.style.opacity="100%";
+
+    span1.innerHTML = "or Press";
+    span2.innerHTML = "RETURN";
+  }
+  function clicked(){
+    window.location= "Select_page.html";
+  }
+</script>

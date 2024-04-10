@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dribbble</title>
+    <link rel="stylesheet" href="CSS/Index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    
+    <div class="main_div">
+      <div class="flexdiv">
+        <div class="hero">
+          <img class="hero_img" src="Images/Hero_img.jpg" alt="" />
+        </div>
+
+        <div class="sign_up">
+          <div class="sign_in">
+            <span>Already a member?</span>
+            <a href="">Sign In</a>
+          </div>
+
+          <h2 class="align">Sign up to Dribbble</h2>
+          <p id="alertmsg" class="align"></p>
+
+          <div class="information ">
+            <div class="name">
+              <h3>Name</h3>
+              <input id="Name" class="input_text" type="text" />
+            </div>
+
+            <div class="Username">
+              <div style="display: flex">
+                <i id="logo"></i>
+                <h3 style="margin-left: 5px">Username</h3>
+              </div>
+              <input id="username" class="input_text" type="text" />
+            </div>
+          </div>
+          <div class="signup_align">
+            <h3>Email</h3>
+            <input class="input_text signup_input" type="email" />
+          </div>
+          <div class="signup_align">
+            <h3>Password</h3>
+            <input
+              placeholder="  6+ Characters"
+              class="input_text signup_input"
+              type="password"
+            />
+          </div>
+
+          <div class="signup_policy signup_input signup_align">
+            <div style="margin-top: 2px">
+              <input class="check_box" style="height: 18px; width: 18px" type="checkbox" />
+            </div>
+            <div class="policy_span">
+              <span>Creating an account means you're okay with our</span>
+              <span style="color: darkblue"
+                >Terms of Service, Privacy Policy,</span
+              >
+              <span> and our default</span>
+              <span style="color: darkblue">Notification Settings.</span>
+            </div>
+          </div>
+
+          <div class="createBtn signup_align">
+            <button onclick="btnclick();" class="btn">Create Account</button>
+          </div>
+
+          <div class="captcha_span signup_align">
+            <span> This site is protected by reCAPTCHA and the Google </span>
+            <span style="color: darkblue">Privacy Policy</span>
+            <span>and</span>
+            <span style="color: darkblue">Terms of Service</span>
+            <span>apply.</span>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </body>
+</html>
+<script>
+  function btnclick() {
+    if(username.value =="" || Name.value==""){
+      username.style.backgroundColor = "#ffd6d6";
+      Name.style.backgroundColor = "#ffd6d6";
+      username.style.color = "red";
+      Name.style.color = "red";
+      alertmsg.innerHTML = "* Please enter Name and Username";
+    }
+    else if (username.value == Name.value) {
+      logo.classList.add("fa-triangle-exclamation");
+      logo.classList.add("fa-solid");
+      logo.style.marginTop = "2px"
+      logo.style.color = "red";
+      username.style.backgroundColor = "#ffd6d6";
+      username.style.color = "red";
+      alertmsg.innerHTML = "* Username has already been taken";
+      // console.log("john");
+    }
+    
+    else{
+      window.location="Profile_page.html";
+    }
+    
+  }
+  
+</script>

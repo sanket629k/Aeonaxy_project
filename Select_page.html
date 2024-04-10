@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Select</title>
+    <link rel="stylesheet" href="CSS/Profile_style.css" />
+    <link rel="stylesheet" href="CSS/Select_style.css" />
+  </head>
+  <body>
+    <div class="maindiv">
+      <div>
+        <div class="logo_div">
+          <img class="logo" src="Images/logo.avif" alt="Logo" />
+          <button class="backbtn" onclick="backclick()"><</button>
+        </div>
+      </div>
+
+      <div class="right_div">
+        <h1>What brings you to Dribbble?</h1>
+        <p>
+          Select the options that best describe you. Don't worry, you can
+          explore other options later.
+        </p>
+
+        <div class="opt_div">
+          <div class="opt1">
+            <img class="opt_img" src="Images/opt1.jpg" alt="" />
+            <h5>I'm a designer looking to share my work</h5>
+            <input name="select_opt" type="checkbox" class="rounded" />
+          </div>
+          <div class="opt2">
+            <img class="opt_img" src="Images/opt2.jpg" alt="" />
+            <h5>I'm looking to hire a designer</h5>
+            <input name="select_opt" type="checkbox" class="rounded" />
+          </div>
+          <div id="optdiv" class="opt3">
+            <img  id="opt" class="opt_img" src="Images/opt3.jpg" alt="" />
+            <h5>I'm looking for design inspiration</h5>
+            <p style="display: none" id="opt3"></p>
+            <input
+              onclick="abc()"
+              name="select_opt"
+              id="rounded"
+              type="checkbox"
+              class="rounded"
+            />
+            <img class="check_box" id="check_box" alt="" />
+          </div>
+        </div>
+
+        <h5 class="heading" id="heading"></h5>
+        <button id="finish" class="next_btn" onclick="btnclick()">
+          Finish
+        </button>
+        <div class="return">
+            <span id="span1" ></span>
+        <span id="span2" style="font-weight: 550;"></span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script>
+    finish.disabled = true;
+    finish.style.opacity="50%";
+
+    check_box.style.display = "none";
+  function backclick() {
+    window.location = "Profile_page.html";
+  }
+  function abc() {
+    opt3.innerHTML =
+      "With over 7 million shots from a vast community of designers, Dribbble is the leading source for design inspiration.";
+    opt3.style.display = "block";
+    opt.style.marginTop = "-105px";
+    optdiv.style.border = "1px solid rgb(227, 0, 121)"
+    rounded.style.display = "none";
+    check_box.style.display = "block";
+    check_box.src = "Images/check_box.png";
+
+    span1.innerHTML = "or Press";
+    span2.innerHTML = "RETURN";
+
+    finish.disabled = false;
+    finish.style.opacity="100%";
+
+    heading.innerHTML = "Anything else? You can select multiple"
+  }
+  function btnclick(){
+    window.location="Verify_page.html";
+  }
+</script>
